@@ -89,7 +89,3 @@ Aqui está um exemplo da saída que será exibida após a execução do script:
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-Esse README fornece informações essenciais sobre o projeto, como descrição, estrutura, execução e contribuições. Adapte conforme necessário para incluir informações adicionais ou ajustes específicos do seu projeto.
