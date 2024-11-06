@@ -1,16 +1,16 @@
-# Criptforms: Fetching Cryptocurrency Prices
+# CriptoForms: Busca de Preços de Criptomoedas
 
 ## Descrição do Projeto
 
-Este projeto tem como objetivo buscar e exibir os preços das criptomoedas a partir de uma API pública. Através de um script Python, é possível recuperar os dados em tempo real e processá-los para exibir o preço das criptomoedas em dólares (USD).
+Este projeto tem como objetivo buscar e exibir os preços das criptomoedas a partir de uma API pública. Através de um script em Python, é possível recuperar os dados em tempo real e processá-los para exibir o preço das criptomoedas em dólares (USD).
 
-A execução do script busca os preços de diversas criptomoedas e exibe as informações no formato JSON.
+A execução do script busca os preços de diversas criptomoedas e exibe as informações em formato JSON.
 
 ## Funcionalidades
 
-- **Busca de preços em tempo real:** O script consulta a API e retorna os preços das criptomoedas.
-- **Exibição de dados:** Os preços das criptomoedas são exibidos no formato JSON, facilitando a análise e o processamento dos dados.
-- **Suporte para múltiplas criptomoedas:** A API retorna dados para uma lista extensa de criptomoedas, incluindo nomes e preços em USD.
+- **Busca de preços em tempo real:** O script consulta a API e retorna os preços atualizados das criptomoedas.
+- **Exibição de dados:** Os preços das criptomoedas são exibidos em formato JSON, facilitando a análise e o processamento dos dados.
+- **Suporte para múltiplas criptomoedas:** A API retorna dados para uma lista extensa de criptomoedas, incluindo seus preços em USD.
 
 ## Estrutura do Projeto
 
@@ -18,21 +18,21 @@ A estrutura de arquivos do projeto é a seguinte:
 
 ```
 /Criptforms
-    ├── fetch_ids.py         # Script responsável por buscar os identificadores das criptomoedas
-    ├── fetch_data.py        # Script responsável por buscar os preços das criptomoedas
+    ├── buscar_ids.py         # Script responsável por buscar os identificadores das criptomoedas
+    ├── buscar_precos.py        # Script responsável por buscar os preços das criptomoedas
     ├── main.py              # Arquivo principal que executa o fluxo de busca e exibição de dados
     └── requirements.txt     # Arquivo de dependências do projeto
 ```
 
 ### Arquivos principais
 
-- **`fetch_ids.py`**: Este script é responsável por buscar os identificadores das criptomoedas através de uma consulta à API. Os dados de identificadores são usados como base para buscar os preços.
+- **`buscar_ids.py`**: Script responsável por buscar os identificadores das criptomoedas através de uma consulta à API. Os dados de identificadores são usados como base para buscar os preços.
   
-- **`fetch_data.py`**: Este script faz a consulta para obter os preços das criptomoedas em USD. Ele recebe os identificadores das criptomoedas e retorna os preços.
+- **`buscar_data.py`**: Este script faz a consulta para obter os preços das criptomoedas em USD. Ele recebe os identificadores das criptomoedas e retorna os preços.
 
-- **`main.py`**: Arquivo principal que executa o fluxo completo. Ele importa funções dos scripts `fetch_ids.py` e `fetch_data.py`, e exibe os dados de preços das criptomoedas no formato desejado.
+- **`main.py`**: Arquivo principal que executa o fluxo completo. Ele importa funções dos scripts `fetch_ids.py` e `fetch_data.py` e exibe os dados de preços das criptomoedas no formato desejado.
 
-- **`requirements.txt`**: Contém as dependências necessárias para rodar o projeto, como bibliotecas para realizar requisições HTTP (ex: `requests`).
+- **`requirements.txt`**: Contém as dependências necessárias para rodar o projeto, como bibliotecas para realizar requisições HTTP (ex.: `requests`).
 
 ## Requisitos
 
@@ -65,11 +65,11 @@ pip install -r requirements.txt
 
 3. **Verificar resultados**
 
-   Os dados serão exibidos no formato JSON, contendo o nome da criptomoeda e seu respectivo preço em USD, se disponível. Caso não haja preço para uma criptomoeda, o campo estará vazio.
+   Os dados serão exibidos em formato JSON, contendo o nome da criptomoeda e seu respectivo preço em USD, se disponível. Caso não haja preço para uma criptomoeda, o campo estará vazio.
 
 ## Exemplo de Saída
 
-Aqui está um exemplo da saída que será exibida após a execução do script:
+Aqui está um exemplo da saída exibida após a execução do script:
 
 ```json
 {
@@ -88,4 +88,6 @@ Aqui está um exemplo da saída que será exibida após a execução do script:
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
